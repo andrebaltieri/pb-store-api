@@ -5,6 +5,7 @@ using PbStore.Domain.Pedidos.Comandos;
 using PbStore.Domain.Pedidos.Enums;
 using PbStore.Domain.Pedidos.ObjetosValor;
 using UnitTestProject1.Mocks;
+using System.Linq;
 
 namespace UnitTestProject1
 {
@@ -63,7 +64,7 @@ namespace UnitTestProject1
                 new RepositorioProduto());
             manipulador.Manipular(comando);
 
-            Assert.AreEqual(0, manipulador.Notifications);
+            Assert.AreEqual(0, manipulador.Notifications.Count);
         }
     }
 }
