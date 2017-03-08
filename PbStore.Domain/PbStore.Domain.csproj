@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04B1BBC9-9385-4FFD-A416-A982C4DA7B59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PbStore.Domain</RootNamespace>
+    <AssemblyName>PbStore.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FluentValidator, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidator.1.0.5\lib\net461\FluentValidator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pedidos\Cliente.cs" />
+    <Compile Include="Pedidos\Comandos\IComando.cs" />
+    <Compile Include="Pedidos\Comandos\IManipulador.cs" />
+    <Compile Include="Pedidos\Comandos\ManipuladorPedidos.cs" />
+    <Compile Include="Pedidos\Comandos\RegistrarPedido.cs" />
+    <Compile Include="Pedidos\Entidade.cs" />
+    <Compile Include="Pedidos\Enums\ETipoPagamento.cs" />
+    <Compile Include="Pedidos\ItemPedido.cs" />
+    <Compile Include="Pedidos\ObjetosValor\CPF.cs" />
+    <Compile Include="Pedidos\ObjetosValor\Email.cs" />
+    <Compile Include="Pedidos\ObjetosValor\Endereco.cs" />
+    <Compile Include="Pedidos\ObjetosValor\Nome.cs" />
+    <Compile Include="Pedidos\Pedido.cs" />
+    <Compile Include="Pedidos\Produto.cs" />
+    <Compile Include="Pedidos\Repositorios\IRepositorioCliente.cs" />
+    <Compile Include="Pedidos\Repositorios\IRepositorioPedido.cs" />
+    <Compile Include="Pedidos\Repositorios\IRepositorioProduto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
