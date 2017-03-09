@@ -5,7 +5,7 @@ namespace PbStore.Domain.Pedidos
     public class ItemPedido : Entidade
     {
         public ItemPedido(Produto produto, int quantidade)
-        {
+        {   
             Produto = produto;
             Valor = produto.Preco;
             Quantidade = quantidade;
