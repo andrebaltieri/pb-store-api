@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PbStore.Domain.Tests", "PbS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PbStore.Domain", "PbStore.Domain\PbStore.Domain.csproj", "{04B1BBC9-9385-4FFD-A416-A982C4DA7B59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PbStore.Dao", "PbStore.Dao\PbStore.Dao.csproj", "{61576A65-9DE2-4A1F-92F8-6C4CF7FEC2FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{04B1BBC9-9385-4FFD-A416-A982C4DA7B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04B1BBC9-9385-4FFD-A416-A982C4DA7B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04B1BBC9-9385-4FFD-A416-A982C4DA7B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61576A65-9DE2-4A1F-92F8-6C4CF7FEC2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61576A65-9DE2-4A1F-92F8-6C4CF7FEC2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61576A65-9DE2-4A1F-92F8-6C4CF7FEC2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61576A65-9DE2-4A1F-92F8-6C4CF7FEC2FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
