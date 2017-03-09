@@ -26,7 +26,7 @@ namespace PbStore.Domain.Pedidos
         public CPF CPF { get; private set; }
         public Endereco Endereco { get; private set; }
         public string Telefone { get; private set; }
-        public DateTime DataNascimento { get; }
+        public DateTime DataNascimento { get; private set; }
 
         public void AtualizarDocumento(string cpf)
         {
