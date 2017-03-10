@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "exports": {
+    "PbStore.Domain/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/PbStore.Domain.dll": {}
+      },
+      "runtime": {
+        "../packages/FluentValidator.1.0.5/lib/net461/FluentValidator.dll": {},
+        "bin/Debug/PbStore.Domain.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/PbStore.Domain.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "PbStore.Infra/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/PbStore.Infra.dll": {}
+      },
+      "runtime": {
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.SqlServer.dll": {},
+        "../packages/EntityFramework.6.1.3/lib/net45/EntityFramework.dll": {},
+        "../packages/FluentValidator.1.0.5/lib/net461/FluentValidator.dll": {},
+        "bin/Debug/PbStore.Infra.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/PbStore.Infra.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using PbStore.Domain.Pedidos;
 using PbStore.Domain.Pedidos.Repositorios;
 
-namespace UnitTestProject1.Mocks
+namespace PbStore.Infra.Repositorios
 {
     public class RepositorioProduto : IRepositorioProduto
     {
         public Produto Obter(Guid id)
         {
-            return new Produto("Caneta", "Caneta Azul", 10, 80);
+            return new Produto("Mouse", "Mouse", 299, 50);
         }
 
         public IEnumerable<Produto> Obter(int skip, int take)
         {
-            return null;
+            var produtos = new List<Produto>();
+            produtos.Add(new Produto("Mouse", "Mouse", 299, 50));
+            return produtos.Skip(skip).Take(take);
         }
     }
 }

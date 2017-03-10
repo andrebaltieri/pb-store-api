@@ -33,8 +33,8 @@ namespace PbStore.Domain.Pedidos.Comandos
             // Adiciona um item ao pedido
             foreach (var item in comando.Itens)
             {
-                var produto = _repositorioProduto.Obter(item.Key);
-                pedido.AdicionarItem(produto, item.Value);
+                var produto = _repositorioProduto.Obter(item.Produto);
+                pedido.AdicionarItem(produto, item.Quantidade);
             }
 
             // Aplica o desconto
